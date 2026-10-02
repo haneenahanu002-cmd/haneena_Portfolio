@@ -17,6 +17,7 @@ import {
   faCode,
   faArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
+import profile from "../assets/profile.png";
 
 
 
@@ -121,7 +122,7 @@ function Hero() {
 
               <div className="hero-portrait-frame">
                 <img
-                  src="src\assets\profile.png"
+                  src={profile}
                   alt="Haneena T - Full Stack Developer"
                   className="hero-profile-image"
                 />
