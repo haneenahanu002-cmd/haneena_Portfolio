@@ -1,0 +1,436 @@
+
+.aboutme-page {
+  min-height: 100vh;
+  color: #f6f1f4;
+  background: #08070a;
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+
+.aboutme-banner {
+  padding: 65px 0 55px;
+  background:
+    radial-gradient(
+      ellipse at 80% 20%,
+      rgba(145, 0, 48, 0.25),
+      transparent 50%
+    ),
+    #0c080c;
+  border-bottom: 1px solid rgba(255, 7, 84, 0.3);
+}
+
+.aboutme-eyebrow,
+.aboutme-label {
+  color: #ff477b;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.aboutme-banner h1 {
+  margin: 10px 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 600;
+}
+
+.aboutme-banner h1 span,
+.aboutme-section-title span,
+.aboutme-intro h2 span,
+.aboutme-goal h2 span,
+.aboutme-contact-section h2 span {
+  color: #ff0754;
+}
+
+.aboutme-banner-text {
+  max-width: 550px;
+  color: #c5bdc3;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.aboutme-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.aboutme-intro {
+  padding-bottom: 60px;
+}
+
+.aboutme-intro h2,
+.aboutme-section-title,
+.aboutme-goal h2,
+.aboutme-contact-section h2 {
+  margin: 14px 0 22px;
+  color: #f7f2f5;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(30px, 3.5vw, 43px);
+  line-height: 1.2;
+}
+
+.aboutme-paragraph {
+  color: #c7c0c6;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.aboutme-personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 25px;
+  margin: 24px 0;
+}
+
+.aboutme-personal-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e3dce1;
+  font-size: 13px;
+}
+
+.aboutme-personal-info svg {
+  color: #ff2868;
+}
+
+.aboutme-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 13px 24px;
+  color: #fff;
+  background: #dc0047;
+  border: 1px solid #ff0754;
+  border-radius: 30px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.aboutme-contact-btn:hover {
+  color: #fff;
+  background: #ff0754;
+  box-shadow: 0 0 22px rgba(255, 7, 84, 0.2);
+  transform: translateY(-2px);
+}
+.aboutme-home-btn{
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 13px 24px;
+  color: #fff;
+  background: #dc0047;
+  border: 1px solid #ff0754;
+  border-radius: 30px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+}
+.aboutme-home-btn:hover {
+  color: #fff;
+  background: #ff0754;
+  box-shadow: 0 0 22px rgba(255, 7, 84, 0.2);
+  transform: translateY(-2px);
+}
+
+.aboutme-visual {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.aboutme-photo-frame {
+  height: 390px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 1px solid rgba(255, 7, 84, 0.45);
+  border-radius: 48% 48% 12px 12px;
+  background:
+    radial-gradient(
+      ellipse at 50% 35%,
+      rgba(129, 0, 42, 0.5),
+      #10090e 70%
+    );
+  box-shadow: 0 0 35px rgba(255, 7, 84, 0.07);
+}
+
+.aboutme-photo {
+  width: 120%;
+  height: 120%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.aboutme-photo-caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 18px;
+  color: #f0e7ed;
+  background: #171016;
+  border: 1px solid rgba(255, 7, 84, 0.35);
+  border-radius: 10px;
+  font-size: 11px;
+}
+
+.caption-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff0754;
+  box-shadow: 0 0 10px #ff0754;
+}
+
+.aboutme-section-block {
+  padding: 35px 0 45px;
+  border-top: 1px solid rgba(255, 7, 84, 0.17);
+  scroll-margin-top: 95px;
+}
+
+.aboutme-section-title {
+  margin-bottom: 20px;
+}
+
+.aboutme-education-card,
+.aboutme-project-card {
+  height: 100%;
+  padding: 25px;
+  background: linear-gradient(
+    135deg,
+    rgba(23, 13, 21, 0.95),
+    rgba(12, 9, 13, 0.98)
+  );
+  border: 1px solid rgba(255, 7, 84, 0.25);
+  border-radius: 13px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutme-education-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.aboutme-education-card:hover,
+.aboutme-project-card:hover {
+  border-color: rgba(255, 7, 84, 0.65);
+  box-shadow: 0 10px 30px rgba(255, 7, 84, 0.06);
+}
+
+.aboutme-card-icon,
+.aboutme-project-icon,
+.aboutme-goal-icon {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff477b;
+  background: rgba(255, 7, 84, 0.12);
+  border: 1px solid rgba(255, 7, 84, 0.15);
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.aboutme-card-date {
+  color: #ff477b;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.aboutme-education-card h3,
+.aboutme-project-card h3 {
+  margin: 10px 0;
+  color: #f6f0f4;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.aboutme-education-card p,
+.aboutme-project-card p {
+  color: #c5bdc3;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.aboutme-muted {
+  color: #928790 !important;
+}
+
+.aboutme-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.aboutme-skill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 15px;
+  color: #e9e0e6;
+  background: #130d12;
+  border: 1px solid rgba(255, 7, 84, 0.25);
+  border-radius: 8px;
+  font-size: 12px;
+  transition: all 0.25s ease;
+}
+
+.aboutme-skill svg {
+  color: #ff2868;
+}
+
+.aboutme-skill:hover {
+  color: #fff;
+  background: rgba(190, 0, 59, 0.2);
+  border-color: #ff0754;
+  transform: translateY(-2px);
+}
+
+.aboutme-project-card {
+  position: relative;
+  min-height: 270px;
+}
+
+.aboutme-project-number {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  color: rgba(255, 71, 123, 0.65);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 17px;
+}
+
+.aboutme-project-icon {
+  margin-bottom: 22px;
+}
+
+.aboutme-project-tech {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px 10px;
+  color: #ff7da2;
+  background: rgba(255, 7, 84, 0.08);
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.aboutme-goal {
+  margin-top: 30px;
+  padding: 45px 30px;
+  text-align: center;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(126, 0, 41, 0.23),
+      transparent 70%
+    ),
+    #0e090d;
+  border: 1px solid rgba(255, 7, 84, 0.28);
+  border-radius: 15px;
+}
+
+.aboutme-goal-icon {
+  margin: 0 auto 20px;
+}
+
+.aboutme-goal h2 {
+  margin: 14px 0;
+}
+
+.aboutme-goal > p:last-child {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #c7bec5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.aboutme-contact-section {
+  padding: 65px 15px 20px;
+  text-align: center;
+}
+
+.aboutme-contact-section h2 {
+  margin-bottom: 15px;
+}
+
+.aboutme-contact-section > p:not(.aboutme-label) {
+  color: #c7bec5;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+  .aboutme-banner {
+    padding: 45px 0 35px;
+  }
+
+  .aboutme-container {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+
+  .aboutme-intro {
+    padding-bottom: 35px;
+  }
+
+  .aboutme-intro h2,
+  .aboutme-section-title,
+  .aboutme-goal h2,
+  .aboutme-contact-section h2 {
+    font-size: 31px;
+  }
+
+  .aboutme-visual {
+    max-width: 340px;
+    margin-top: 10px;
+  }
+
+  .aboutme-photo-frame {
+    height: 330px;
+  }
+
+  .aboutme-section-block {
+    padding: 28px 0 35px;
+  }
+
+  .aboutme-education-card {
+    padding: 20px;
+  }
+
+  .aboutme-project-card {
+    min-height: 0;
+  }
+
+  .aboutme-goal {
+    padding: 35px 20px;
+  }
+
+  .aboutme-contact-section {
+    padding-top: 45px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aboutme-page *,
+  .aboutme-page *::before,
+  .aboutme-page *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

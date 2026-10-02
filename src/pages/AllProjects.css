@@ -1,0 +1,139 @@
+
+.all-projects-page {
+  min-height: 100vh;
+  padding: 100px 0;
+  background: #090909;
+  color: #fff;
+}
+
+.back-to-portfolio {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #f04b78;
+  text-decoration: none;
+  margin-bottom: 55px;
+}
+
+.all-projects-heading {
+  margin-bottom: 45px;
+}
+
+.all-projects-heading > p:first-child {
+  color: #f04b78;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.all-projects-heading h1 {
+  font-size: clamp(38px, 6vw, 64px);
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.all-projects-heading h1 span {
+  color: #f04b78;
+}
+
+.all-projects-subtitle {
+  color: #aaa;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+.all-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.all-project-card {
+  overflow: hidden;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  background: #111;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.all-project-card:hover {
+  transform: translateY(-6px);
+  border-color: #f04b78;
+}
+
+.all-project-image {
+  height: 250px;
+  overflow: hidden;
+  background: #1b1b1b;
+}
+
+.all-project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.all-project-card:hover .all-project-image img {
+  transform: scale(1.04);
+}
+
+.all-project-content {
+  padding: 24px;
+}
+
+.all-project-title h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.all-project-content > p {
+  color: #aaa;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.all-project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.all-project-tech span {
+  font-size: 12px;
+  color: #f38aa8;
+  background: #25151c;
+  padding: 7px 11px;
+  border-radius: 20px;
+}
+
+.academic-project-label {
+  display: inline-block;
+  color: #f38aa8;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.all-project-demo {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  color: #f04b78;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .all-projects-page {
+    padding: 65px 0;
+  }
+
+  .all-projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .all-project-image {
+    height: 220px;
+  }
+}

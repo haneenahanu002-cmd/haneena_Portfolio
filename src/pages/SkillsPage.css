@@ -1,0 +1,340 @@
+
+.skills-page {
+  min-height: 100vh;
+  background: #08080b;
+  color: #f5f2f4;
+  padding-bottom: 70px;
+}
+
+.skills-page-banner {
+  padding: 75px 0 55px;
+  border-bottom: 1px solid rgba(255, 49, 95, 0.16);
+  background:
+    radial-gradient(
+      ellipse at 80% 10%,
+      rgba(151, 15, 55, 0.13),
+      transparent 45%
+    ),
+    #08080b;
+}
+
+.skills-eyebrow {
+  color: #f04470;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 12px;
+}
+
+.skills-eyebrow span {
+  margin-right: 12px;
+  color: #ff315f;
+}
+
+.skills-page-banner h1 {
+  color: #f8f5f6;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 5vw, 55px);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.skills-page-banner h1 span,
+.skills-section-heading h2 span,
+.skills-learning-card h2 span {
+  color: #f04470;
+}
+
+.skills-banner-text {
+  max-width: 620px;
+  margin: 0;
+  color: #aaa3ad;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.skills-page-container {
+  padding-top: 45px;
+}
+
+.skills-content-section {
+  margin-bottom: 65px;
+}
+
+.skills-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.skills-section-heading h2 {
+  margin: 0 0 9px;
+  color: #f7f2f5;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(27px, 3vw, 36px);
+  font-weight: 500;
+}
+
+.skills-section-description {
+  margin: 0;
+  color: #a9a2ac;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.skills-detail-card {
+  height: 100%;
+  min-height: 225px;
+  padding: 23px;
+  border: 1px solid rgba(242, 53, 99, 0.22);
+  border-radius: 13px;
+  background: linear-gradient(
+    145deg,
+    rgba(35, 17, 26, 0.82),
+    rgba(15, 14, 19, 0.97)
+  );
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.skills-detail-card:hover {
+  border-color: rgba(255, 54, 105, 0.65);
+  box-shadow: 0 10px 32px rgba(255, 35, 85, 0.08);
+}
+
+.skills-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.skills-card-icon,
+.soft-skill-icon,
+.skills-learning-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+  background: #b90e43;
+  box-shadow: 0 0 20px rgba(255, 25, 85, 0.16);
+}
+
+.skills-card-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.skills-card-number {
+  color: #ff426d;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.skills-detail-card h3,
+.soft-skill-card h3 {
+  color: #f6f0f4;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.skills-card-description {
+  min-height: 42px;
+  margin-bottom: 18px;
+  color: #aaa3ad;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.skills-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 20px;
+  background: #211f26;
+  color: #d8d1d8;
+  font-size: 11px;
+  line-height: 1.3;
+  transition: all 0.25s ease;
+}
+
+.skills-tag:hover {
+  border-color: rgba(255, 64, 112, 0.4);
+  background: #3a1727;
+  color: #fff;
+}
+
+/* Soft skills */
+
+.soft-skills-section {
+  padding-top: 8px;
+}
+
+.soft-skill-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  height: 100%;
+  min-height: 135px;
+  padding: 22px;
+  border: 1px solid rgba(242, 53, 99, 0.2);
+  border-radius: 12px;
+  background: linear-gradient(
+    145deg,
+    rgba(31, 17, 25, 0.85),
+    rgba(15, 14, 19, 0.97)
+  );
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.soft-skill-card:hover {
+  border-color: rgba(255, 54, 105, 0.6);
+  box-shadow: 0 8px 25px rgba(255, 35, 85, 0.07);
+}
+
+.soft-skill-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  font-size: 16px;
+}
+
+.soft-skill-card h3 {
+  font-size: 15px;
+  margin: 2px 0 8px;
+}
+
+.soft-skill-card p {
+  color: #aaa3ad;
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Learning banner */
+
+.skills-learning-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px;
+  border: 1px solid rgba(242, 53, 99, 0.28);
+  border-radius: 15px;
+  background:
+    radial-gradient(
+      ellipse at left,
+      rgba(185, 14, 67, 0.14),
+      transparent 65%
+    ),
+    #111015;
+}
+
+.skills-learning-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  font-size: 20px;
+}
+
+.skills-learning-card h2 {
+  margin: 0 0 12px;
+  color: #f7f2f5;
+  font-size: clamp(20px, 3vw, 27px);
+  font-weight: 600;
+}
+
+.skills-learning-card p {
+  max-width: 680px;
+  margin: 0;
+  color: #aaa3ad;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.skills-back-home {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.skills-home-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px !important;
+  border: 1px solid rgba(255, 54, 105, 0.55) !important;
+  border-radius: 8px !important;
+  background: #b90e43 !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  transition: all 0.25s ease !important;
+}
+
+.skills-home-button:hover {
+  border-color: #ff426d !important;
+  background: #8e0c35 !important;
+  transform: translateY(-2px);
+}
+
+/* Tablet */
+
+@media (max-width: 767px) {
+  .skills-page-banner {
+    padding: 55px 0 40px;
+  }
+
+  .skills-page-container {
+    padding-top: 35px;
+  }
+
+  .skills-content-section {
+    margin-bottom: 48px;
+  }
+
+  .skills-detail-card {
+    padding: 19px;
+    min-height: 210px;
+  }
+
+  .soft-skill-card {
+    padding: 17px;
+    gap: 12px;
+  }
+
+  .skills-learning-card {
+    padding: 22px;
+    gap: 14px;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 420px) {
+  .skills-learning-card {
+    flex-direction: column;
+  }
+
+  .skills-detail-card {
+    min-height: auto;
+  }
+
+  .skills-card-description {
+    min-height: 0;
+  }
+}
